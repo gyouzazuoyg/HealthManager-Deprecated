@@ -1,0 +1,8 @@
+back/node_modules
+front/node_modules
+back/database/uri.js
+back/database/myDB-test.js
+back/database/foodDB-test.js
+back/database/dietDB-test.js
+back/routes/diet_plan.js
+back/routes/food_info.js
