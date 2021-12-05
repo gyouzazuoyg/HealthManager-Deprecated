@@ -14,7 +14,7 @@ const DietList = (props) => {
   });
 
   const removeDietItem = (foodName, index) => {
-    fetch("/delete_diet_item", {
+    fetch("/api/delete_diet_item", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

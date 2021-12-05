@@ -22,7 +22,7 @@ function FoodEdit(props) {
       return;
     }
 
-    fetch("/create_food", {
+    fetch("/api/create_food", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

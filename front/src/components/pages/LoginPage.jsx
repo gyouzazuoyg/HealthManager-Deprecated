@@ -8,7 +8,7 @@ function LoginPage() {
   return (
     <>
       <LoginNavbar />
-      <div className="food-page">
+      <div className="web-page">
         <AccountSection status="login" />
       </div>
     </>

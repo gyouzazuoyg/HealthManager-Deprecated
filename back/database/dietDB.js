@@ -10,25 +10,8 @@ function dietDBBuilder() {
       foodName: foodName,
       calorieOunce: calorieOunce,
     };
-    const FILTER = { user: user, foodName: foodName };
     myDB.create(COLLECTION_NAME, DOCUMENT);
     console.log("Created successfully!");
-  };
-
-  dietDB.update = (user, foodName, calorieOunce) => {
-    const DOCUMENT = {
-      user: user,
-      foodName: foodName,
-      calorieOunce: calorieOunce,
-    };
-    const FILTER = { user: user, foodName: foodName };
-    myDB.isExisting(COLLECTION_NAME, FILTER).then((flag) => {
-      if (flag) {
-        myDB.update(COLLECTION_NAME, FILTER, DOCUMENT);
-      } else {
-        console.log("Update failed. The food is not existing!");
-      }
-    });
   };
 
   dietDB.delete = (user, foodName) => {

@@ -10,6 +10,9 @@ function FunctionNavbar() {
       <Link to="/register" className="nav-links">
         Register
       </Link>
+      <Link to="/weight" className="nav-links">
+        Weight
+      </Link>
       <Link to="/diet_plan" className="nav-links">
         Diet Plan
       </Link>

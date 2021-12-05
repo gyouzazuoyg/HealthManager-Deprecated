@@ -20,7 +20,7 @@ function UserNamePasswordEdit(props) {
       return;
     }
 
-    fetch("/create_user", {
+    fetch("/api/create_user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ function UserNamePasswordEdit(props) {
       return;
     }
 
-    let result = await fetch("/login", {
+    let result = await fetch("/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

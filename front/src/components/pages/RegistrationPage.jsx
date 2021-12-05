@@ -8,7 +8,7 @@ function RegistrationPage() {
   return (
     <>
       <LoginNavbar />
-      <div className="food-page">
+      <div className="web-page">
         <AccountSection status="register" />
       </div>
     </>

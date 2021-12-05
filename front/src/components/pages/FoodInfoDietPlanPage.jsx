@@ -11,7 +11,7 @@ function FoodInfoDietPlanPage() {
   const [dietItems, setDietItems] = useState([]);
 
   async function fetchFoodData() {
-    const result = await fetch(`/get_food_list/${user}`, {
+    const result = await fetch(`/api/get_food_list/${user}`, {
       method: "GET",
     });
     let itemsObj = await result.json();
@@ -27,7 +27,7 @@ function FoodInfoDietPlanPage() {
   }
 
   async function fetchDietData() {
-    const result = await fetch(`/get_diet_plan/${user}`, {
+    const result = await fetch(`/api/get_diet_plan/${user}`, {
       method: "GET",
     });
     let itemsObj = await result.json();
@@ -55,7 +55,7 @@ function FoodInfoDietPlanPage() {
   return (
     <>
       <FunctionNavbar />
-      <div className="food-page">
+      <div className="web-page">
         <UserContext.Provider value={user}>
           <div className="food-section">
             <FoodSection

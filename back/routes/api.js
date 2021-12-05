@@ -3,12 +3,7 @@ var router = express.Router();
 var foodDB = require("../database/foodDB");
 var dietDB = require("../database/dietDB");
 var userDB = require("../database/userDB");
-
-/* GET home page. */
-router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express" });
-  next();
-});
+var weightDB = require("../database/weightDB");
 
 /* Food Information Related Below */
 
@@ -61,6 +56,7 @@ router.post("/create_diet_item", async function (req, res) {
 });
 
 /* Login and Registration Related Below */
+
 router.post("/create_user", async function (req, res) {
   const userName = await req.body.userName;
   const password = await req.body.password;
@@ -80,6 +76,29 @@ router.post("/login", async function (req, res) {
       res.status(200).json({ flag: false });
     }
   });
+});
+
+/* Weight Record Related Below */
+
+router.get("/get_weight_records/:user", function (req, res) {
+  weightDB.retrieveAll(req.params.user, (weightRecords) => {
+    res.status(200).json(weightRecords);
+  });
+});
+
+router.post("/delete_weight_record", async function (req, res) {
+  const user = await req.body.user;
+  const record_date = await req.body.record_date;
+  weightDB.delete(user, record_date);
+  res.status(200);
+});
+
+router.post("/create_weight_record", async function (req, res) {
+  const user = await req.body.user;
+  const record_date = await req.body.record_date;
+  const weight_value = await req.body.weight_value;
+  weightDB.create(user, record_date, weight_value);
+  res.status(200);
 });
 
 module.exports = router;
