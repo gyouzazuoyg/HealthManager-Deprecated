@@ -29,3 +29,6 @@ Yanan Dong
 
 # Demontration Video:
   - [Link](https://youtu.be/_TAeEvPk3M4)
+
+# Screen Shot
+  - [Link](https://github.com/gyouzazuoyg/HealthManager/blob/main/screenShot.png?raw=true)
