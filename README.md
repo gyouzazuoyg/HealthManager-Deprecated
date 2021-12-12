@@ -32,4 +32,4 @@ Yanan Dong
 
 # Screen Shot
   - [Diet Plan Page](https://github.com/gyouzazuoyg/HealthManager/blob/main/screenShot.png?raw=true)
-  - [Weight Page](https://github.com/gyouzazuoyg/HealthManager/blob/main/screenShot2.png?raw=true)
+  - [Weight Page](https://github.com/gyouzazuoyg/HealthManager/blob/main/screenShot2.jpg?raw=true)
