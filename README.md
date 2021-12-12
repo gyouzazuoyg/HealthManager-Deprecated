@@ -31,4 +31,5 @@ Yanan Dong
   - [Link](https://youtu.be/_TAeEvPk3M4)
 
 # Screen Shot
-  - [Link](https://github.com/gyouzazuoyg/HealthManager/blob/main/screenShot.png?raw=true)
+  - [Diet Plan Page](https://github.com/gyouzazuoyg/HealthManager/blob/main/screenShot.png?raw=true)
+  - [Weight Page](https://github.com/gyouzazuoyg/HealthManager/blob/main/screenShot2.png?raw=true)
