@@ -20,6 +20,7 @@ function UserNamePasswordEdit(props) {
       return;
     }
 
+    alert("Registration completed!");
     fetch("/api/create_user", {
       method: "POST",
       headers: {
@@ -49,9 +50,10 @@ function UserNamePasswordEdit(props) {
     if (resultObj.flag) {
       localStorage.clear();
       localStorage.setItem("user", accountInfoObj.userName);
+      alert("Succeeded to sign in!");
       navigate("/diet_plan");
     } else {
-      // failed
+      alert("Failed to sign in!");
     }
   };
 
